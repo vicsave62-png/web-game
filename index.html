@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKN: Filsafat Pancasila Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Belajar PKN: Filsafat Pancasila Indonesia</h1>
+            <p>Selamat datang di dunia pembelajaran interaktif!</p>
+        </header>
+        
+        <nav>
+            <button id="btn-presentasi">Presentasi</button>
+            <button id="btn-kuis">Kuis Game</button>
+            <button id="btn-skor">Lihat Skor</button>
+        </nav>
+        
+        <div id="content">
+            <!-- Presentasi Section -->
+            <section id="presentasi" class="hidden">
+                <h2>Presentasi: Filsafat Pancasila</h2>
+                <div class="slide" id="slide1">
+                    <img src="assets/pancasila.jpg" alt="Pancasila">
+                    <p>Pancasila adalah dasar negara Indonesia, terdiri dari 5 sila yang mencerminkan nilai-nilai filosofis.</p>
+                    <button class="next-slide">Selanjutnya</button>
+                </div>
+                <div class="slide hidden" id="slide2">
+                    <p>Sila pertama: Ketuhanan Yang Maha Esa – Menekankan kepercayaan pada Tuhan.</p>
+                    <button class="prev-slide">Sebelumnya</button>
+                    <button class="next-slide">Selanjutnya</button>
+                </div>
+                <!-- Tambahkan slide lainnya sesuai materi -->
+            </section>
+            
+            <!-- Kuis Section -->
+            <section id="kuis" class="hidden">
+                <h2>Kuis Game: Tanya Jawab</h2>
+                <div id="question-container">
+                    <p id="question">Pertanyaan akan muncul di sini.</p>
+                    <div id="options"></div>
+                </div>
+                <p id="score">Skor: 0</p>
+                <button id="next-question">Pertanyaan Berikutnya</button>
+            </section>
+            
+            <!-- Skor Section -->
+            <section id="skor" class="hidden">
+                <h2>Skor Siswa</h2>
+                <ul id="score-list"></ul>
+            </section>
+        </div>
+    </div>
+    
+    <audio id="correct-sound" src="assets/correct.mp3"></audio>
+    <audio id="wrong-sound" src="assets/wrong.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
