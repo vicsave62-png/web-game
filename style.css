@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #FFD700, #FF6347); /* Background tema Indonesia: emas dan merah */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('assets/indonesia-bg.jpg'); /* Gambar latar panorama Indonesia */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    color: #FF6347;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+nav button {
+    background: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+.slide {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#kuis {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#score {
+    font-size: 1.5em;
+    color: #FF6347;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}
